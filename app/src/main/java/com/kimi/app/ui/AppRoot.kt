@@ -65,7 +65,7 @@ fun AppRoot(viewModel: AppViewModel) {
                 NoticeHost(
                     notices = state.notices,
                     onDismiss = { viewModel.dismissNotice(it) },
-                    modifier = Modifier.align(Alignment.TopCenter),
+                    modifier = Modifier.align(Alignment.BottomCenter).padding(bottom = 16.dp),
                 )
             }
         }
